@@ -1,0 +1,22 @@
+{
+  "name": "myapplication",
+  "version": "1.0.0",
+  "description": "application created by electron",
+  "main": "index.js",
+  "scripts": {
+    
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ajirdoank/electronCourse.git"
+  },
+  "author": "ajirdoank",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ajirdoank/electronCourse/issues"
+  },
+  "homepage": "https://github.com/ajirdoank/electronCourse#readme",
+  "devDependencies": {
+    "electron": "^3.0.10"
+  }
+}
