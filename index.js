@@ -7,7 +7,7 @@ app.on('ready', function(){
   appWindow = new browserWindow({
     show:false
   });
-  appWindow.loadURL('http://www.google.com');
+  appWindow.loadURL('http://raybo.org');
 
   infoWindow = new browserWindow({
     width:400,
@@ -21,8 +21,8 @@ app.on('ready', function(){
     appWindow.show();
     setTimeout(function(){
       infoWindow.show();
-      setTimeout(function(){infoWindow.hide();},3000);
-    },3000);
+      // setTimeout(function(){infoWindow.hide();},3000);
+    },1000);
   });
-})
+});
 
