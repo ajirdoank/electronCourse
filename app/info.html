@@ -9,6 +9,7 @@
   <script type="text/javascript">
     var electron = require('electron');
     var shell = electron.shell;
+    var ipc = electron.ipcRenderer;
   </script>
 </head>
 <body id="page-info">
@@ -18,7 +19,10 @@
       Wellcome to the Ajikempet Labs <br>
       <em>version 1.0.0</em><br>
       <small>built with passion and heart by 
-        <a href="http://raybo.org">ajir github repo</a></small>
+        <a href="#" onclick="shell.openExternal('http://rayboo.org')">ajir github repo</a></small>
+    </p>
+    <p>
+      <a href="#" onclick="ipc.sendSync('closeInfoWindow')">close info window</a>
     </p>
   </main>
 </body>

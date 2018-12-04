@@ -13,9 +13,9 @@ html {
   flex-flow: row wrap;
   flex-direction: column;
   justify-content: center;
-  -webkit-app-region: drag;
+  /* -webkit-app-region: no-drag; */
   -webkit-user-select: none;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 
 #page-info a:link {
