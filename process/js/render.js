@@ -1,7 +1,8 @@
-// @ts-ignore
+
+// @ts-nocheck
 var $ = jQuery = require('jquery');
 var bootstrap = require('bootstrap');
 
-$(function(){
-  $('#appoinment').append('<h3 class="text-success">its loaded</h3>');
+$(function() {
+  $("#appointment").append('<h2 class="text-success">Alhamdulillah</h2>');
 });

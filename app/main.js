@@ -18,16 +18,16 @@ app.on('ready', function(){
     transparent:true,
     frame:false,
     show:false
-  }); //infowindows
+  }); //infowindowss
 
   infoWindow.loadURL('file://'+ __dirname + '/info.html');
 
   appWindow.once('ready-to-show',function(){ //ready to show main app window
     appWindow.show();
-    // setTimeout(function(){
-    //   infoWindow.show();
+    setTimeout(function(){
+      infoWindow.show();
     //   // setTimeout(function(){infoWindow.hide();},3000);
-    // },1000);
+    },1000);
   });
 
   ipc.on('closeInfoWindow', function(event, arg){

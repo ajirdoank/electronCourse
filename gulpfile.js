@@ -17,7 +17,7 @@ gulp.task('js', function() {
     .on('error', function (err) {
       console.error('Error!', err.message);
     })
-    .pipe(gulp.dest(app + '/js'));
+    .pipe(gulp.dest(app + '/js')); 
 });
 
 gulp.task('html', function() {

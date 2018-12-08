@@ -1,0 +1,5 @@
+{
+   "editor.tabCompletion": "onlySnippets",
+   "workbench.editor.enablePreview": false,
+   "editor.minimap.maxColumn": 80
+}
