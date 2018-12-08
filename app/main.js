@@ -9,29 +9,30 @@ app.on('ready', function(){
   appWindow = new browserWindow({
     show:false
   });
-  appWindow.loadURL('http://raybo.org');
 
-  infoWindow = new browserWindow({ //infowindows
+  appWindow.loadURL('file://'+ __dirname + '/index.html');
+
+  infoWindow = new browserWindow({ 
     width:400,
     height:300,
     transparent:true,
     frame:false,
     show:false
-  });
+  }); //infowindows
 
   infoWindow.loadURL('file://'+ __dirname + '/info.html');
 
   appWindow.once('ready-to-show',function(){ //ready to show main app window
     appWindow.show();
-    setTimeout(function(){
-      infoWindow.show();
-      // setTimeout(function(){infoWindow.hide();},3000);
-    },1000);
+    // setTimeout(function(){
+    //   infoWindow.show();
+    //   // setTimeout(function(){infoWindow.hide();},3000);
+    // },1000);
   });
 
-  ipc.on('closeInfoWindow', function(event){
+  ipc.on('closeInfoWindow', function(event, arg){
     event.returnValue='';
     infoWindow.hide();
-  }) //close window
+  }); //close window
 });//app is ready
 

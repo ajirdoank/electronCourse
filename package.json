@@ -2,7 +2,7 @@
   "name": "myapplication",
   "version": "1.0.0",
   "description": "application created by electron",
-  "main": "app/index.js",
+  "main": "app/main.js",
   "scripts": {},
   "repository": {
     "type": "git",
