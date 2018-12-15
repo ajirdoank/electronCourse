@@ -1,5 +1,6 @@
 {
    "editor.tabCompletion": "onlySnippets",
    "workbench.editor.enablePreview": false,
-   "editor.minimap.maxColumn": 80
+   "editor.minimap.maxColumn": 80,
+   "scm.diffDecorationsGutterWidth": 2
 }

@@ -24,10 +24,10 @@ app.on('ready', function(){
 
   appWindow.once('ready-to-show',function(){ //ready to show main app window
     appWindow.show();
-    setTimeout(function(){
-      infoWindow.show();
-    //   // setTimeout(function(){infoWindow.hide();},3000);
-    },1000);
+    // setTimeout(function(){
+    //   infoWindow.show();
+    //    setTimeout(function(){infoWindow.hide();},3000);
+    // },1000);
   });
 
   ipc.on('closeInfoWindow', function(event, arg){
